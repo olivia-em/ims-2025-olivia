@@ -22,6 +22,10 @@ function setup() {
   initGraphics();
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function initGraphics() {
   layer = createGraphics(100, 100);
 }
