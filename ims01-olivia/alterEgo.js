@@ -53,7 +53,10 @@ function draw() {
   }
 }
 
-// **Optimized function for copying pixels based on segmentation**
+// Copying pixels from source to produce a new image based on segmentation mask
+// pixels that are white in the mask are now transparent, where black pixels are pixels from 
+// the source image
+
 function copyForegroundPixels(imgSource, imgMask, imgResult) {
   imgSource.loadPixels();
   imgMask.loadPixels();
